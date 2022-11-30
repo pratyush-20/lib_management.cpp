@@ -3,7 +3,7 @@
 #include<iomanip>//input-output manipulator
 #include<stdlib.h> 
 #include<string.h>
-//#include<stdio.h>
+#include<stdio.h>
 #include<fstream>
 using namespace std;
 class book
@@ -18,7 +18,7 @@ class book
 		cout<<"\nENTER BOOK NO.";
 		cin>>bno;
 		cout<<"\nENTER BOOK NAME";
-		gets(bname);//enables enter with space
+		cin>>bname;
 		cout<<"\nENTER AUTHOR NAME";
 		gets(aname);
 		cout<<"\n\n\nBook Created..";
@@ -66,7 +66,7 @@ class student
 		cout<<"\nEnter The Admission No. ";
 		cin>>admno;
 		cout<<"Enter The Student Name ";
-		gets(name);
+		cin>>name;
 		token=0;
 		stbno[0]='\0';
 		cout<<"\n\nStudent Record Created...";
